@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Guia da Primeira Menstruação</title>
+  <meta name="description" content="Guia educativo sobre primeira menstruação: ciclo, bem-estar, cuidados, sexualidade e onde buscar ajuda.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+  <div class="app">
+    <header>
+      <div class="logo">M</div>
+      <div style="min-width:0">
+        <h1>Guia da Primeira Menstruação</h1>
+        <p class="lead">Guia educativo e interativo</p>
+      </div>
+      <div style="margin-left:auto;display:flex;gap:8px;align-items:center">
+        <button id="toggleTheme" class="chip" aria-pressed="false">Dark</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="accordion">
+        <button class="acc-btn" aria-expanded="false" aria-controls="mod1">
+          Módulo 1 — Entendendo a Menstruação
+          <span>v</span>
+        </button>
+        <div class="acc-body" id="mod1">
+          <p>A menstruação é um processo natural do corpo feminino...</p>
+        </div>
+      </section>
+
+      <section class="accordion">
+        <button class="acc-btn" aria-expanded="false" aria-controls="mod2">
+          Módulo 2 — Cuidados e Higiene
+          <span>v</span>
+        </button>
+        <div class="acc-body" id="mod2">
+          <p>Neste módulo, explicamos os principais cuidados de higiene...</p>
+        </div>
+      </section>
+
+      <section class="accordion">
+        <button class="acc-btn" aria-expanded="false" aria-controls="mod3">
+          Módulo 3 — Sintomas e Emoções
+          <span>v</span>
+        </button>
+        <div class="acc-body" id="mod3">
+          <p>Durante o ciclo menstrual é comum sentir sintomas físicos...</p>
+        </div>
+      </section>
+
+      <section class="accordion">
+        <button class="acc-btn" aria-expanded="false" aria-controls="mod4">
+          Módulo 4 — Mitos e Verdades
+          <span>v</span>
+        </button>
+        <div class="acc-body" id="mod4">
+          <p>Desmistificamos crenças populares sobre a menstruação...</p>
+        </div>
+      </section>
+
+      <section class="accordion">
+        <button class="acc-btn" aria-expanded="false" aria-controls="mod5">
+          Módulo 5 — Quando Buscar Ajuda
+          <span>v</span>
+        </button>
+        <div class="acc-body" id="mod5">
+          <p>É importante saber quando procurar um médico...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="small" id="topo">
+      <div>Versão Mobile — 2025</div>
+    </footer>
+  </div>
+
+  <button id="scrollTopBtn" title="Voltar ao topo">⬆️</button>
+
+  <div class="bottom-bar">
+    <button onclick="window.scrollTo({top:0,behavior:'smooth'})">🏠<span>Início</span></button>
+    <button onclick="alert('Calendário em desenvolvimento!')">📅<span>Calendário</span></button>
+    <button onclick="alert('Comunidade em breve!')">💬<span>Comunidade</span></button>
+    <button onclick="alert('Perfil em breve!')">👤<span>Perfil</span></button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
