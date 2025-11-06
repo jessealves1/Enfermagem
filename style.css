@@ -1,7 +1,7 @@
 :root {
   --bg: #ffffff;
   --card: #f8fafb;
-  --text: #0f172a; 
+  --text: #0f172a;
   --accent: #d946ef;
   --muted: #6b7280;
   --glass: rgba(2,6,23,0.04);
@@ -10,7 +10,7 @@
 [data-theme="dark"] {
   --bg: #0b1220;
   --card: #071028;
-  --text: #ffffff; 
+  --text: #ffffff;
   --accent: #a78bfa;
   --muted: #d1d5db;
   --glass: rgba(230,238,248,0.04);
@@ -27,14 +27,26 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
-.app { max-width: 920px; margin: 0 auto; padding: 18px; padding-bottom: 70px; }
+body, .app, main {
+  background-color: var(--bg);
+}
+
+.app {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 18px;
+  padding-bottom: 70px;
+}
+
 header { display: flex; align-items: center; gap: 12px; }
+
 .logo {
   width: 48px; height: 48px; border-radius: 10px;
   background: linear-gradient(135deg, var(--accent), #fb7185);
   display: flex; align-items: center; justify-content: center;
   color: white; font-weight: 700;
 }
+
 h1 { font-size: 18px; margin: 0; }
 p.lead { margin: 6px 0 14px; color: var(--muted); font-size: 13px; }
 
@@ -54,7 +66,14 @@ main { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 8px; }
 .module-title { font-size: 16px; margin: 0 0 6px; }
 .muted { color: var(--muted); font-size: 13px; line-height: 1.4; }
 
-.accordion { border-radius: 10px; overflow: hidden; margin-top: 8px; border: 1px solid rgba(15,23,42,0.04); }
+.accordion {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 8px;
+  border: 1px solid rgba(15,23,42,0.04);
+  background-color: var(--card); 
+}
+
 .acc-btn {
   display: flex; justify-content: space-between; align-items: center;
   padding: 12px; background: transparent; border: none; width: 100%;
@@ -63,11 +82,17 @@ main { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 8px; }
 }
 .acc-btn span { transition: transform 0.3s ease; }
 .acc-btn[aria-expanded="true"] span { transform: rotate(180deg); }
+
 .acc-body {
-  padding: 12px; border-top: 1px solid rgba(15,23,42,0.04);
-  display: none; font-size: 14px; animation: slideDown 0.3s ease;
+  padding: 12px;
+  border-top: 1px solid rgba(15,23,42,0.04);
+  display: none;
+  font-size: 14px;
+  animation: slideDown 0.3s ease;
   color: var(--text);
+  background-color: var(--card); 
 }
+
 .acc-body p, .acc-body li { margin: 6px 0; }
 .acc-body ul { padding-left: 18px; margin: 6px 0; }
 
