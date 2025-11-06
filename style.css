@@ -1,7 +1,7 @@
 :root {
   --bg: #ffffff;
   --card: #f8fafb;
-  --text: #0f172a; /* 
+  --text: #0f172a; 
   --accent: #d946ef;
   --muted: #6b7280;
   --glass: rgba(2,6,23,0.04);
@@ -10,7 +10,7 @@
 [data-theme="dark"] {
   --bg: #0b1220;
   --card: #071028;
-  --text: #ffffff; /* 
+  --text: #ffffff; 
   --accent: #a78bfa;
   --muted: #d1d5db;
   --glass: rgba(230,238,248,0.04);
